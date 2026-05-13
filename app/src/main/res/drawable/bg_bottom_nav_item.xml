@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <layer-list>
+            <item android:gravity="center">
+                <shape>
+                    <solid android:color="@color/nav_indicator" />
+                    <corners android:radius="22dp" />
+                    <size android:width="57dp" android:height="56dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:gravity="center">
+                <shape>
+                    <solid android:color="@android:color/transparent" />
+                    <corners android:radius="22dp" />
+                    <size android:width="57dp" android:height="56dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

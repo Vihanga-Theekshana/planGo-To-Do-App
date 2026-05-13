@@ -1,0 +1,58 @@
+# Gradle files
+.gradle/
+build/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Optional local workspace metadata
+.history/
+*.code-workspace
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log Files
+*.log
+
+# Android Studio captures folder
+captures/
+
+# External native build folder
+.externalNativeBuild/
+.cxx/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Signing files
+*.jks
+*.keystore
+
+# Built variants
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Unit test reports
+**/build/reports/tests/
+**/build/test-results/
+
+# Android Studio Profiler
+*.hprof
+
+# Navigation
+.navigation/
+.gradle-local/
