@@ -1,16 +1,12 @@
 package lk.example.myapplication;
 
 import android.os.Bundle;
-import android.text.SpannableString;
-import android.text.Spanned;
-import android.text.style.ForegroundColorSpan;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 import com.google.android.material.button.MaterialButton;
 
 import lk.example.myapplication.database.AppDatabaseHelper;
@@ -35,8 +31,6 @@ public class SignUpActivity extends AppCompatActivity {
         MaterialButton btnSignUp = findViewById(R.id.btn_signup);
         ImageButton btnBack = findViewById(R.id.btn_back);
         TextView loginLink = findViewById(R.id.login_link);
-
-        styleLoginLink(loginLink);
 
         btnBack.setOnClickListener(v -> finish());
         loginLink.setOnClickListener(v -> finish());
@@ -99,19 +93,4 @@ public class SignUpActivity extends AppCompatActivity {
         }
     }
 
-    private void styleLoginLink(TextView textView) {
-        String value = getString(R.string.already_have_account);
-        SpannableString spannable = new SpannableString(value);
-        int start = value.indexOf("Login");
-        if (start >= 0) {
-            int end = start + "Login".length();
-            spannable.setSpan(
-                    new ForegroundColorSpan(ContextCompat.getColor(this, R.color.primary)),
-                    start,
-                    end,
-                    Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
-            );
-        }
-        textView.setText(spannable);
-    }
 }

@@ -5,27 +5,35 @@
     android:layout_height="match_parent"
     android:background="@color/background">
 
-    <View
-        android:id="@+id/header_background"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/top_section_height"
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/primary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:fitsSystemWindows="true"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <ImageButton
-        android:id="@+id/btn_back"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="18dp"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:contentDescription="@string/cancel"
-        android:src="@drawable/ic_back"
-        app:layout_constraintBottom_toBottomOf="@id/header_background"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/header_background"
-        app:tint="@color/white" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/header_signup"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/primary">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="18dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/cancel"
+                android:src="@drawable/ic_back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="0dp"
@@ -34,7 +42,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/header_background">
+        app:layout_constraintTop_toBottomOf="@id/appbar_signup">
 
         <LinearLayout
             android:layout_width="356dp"

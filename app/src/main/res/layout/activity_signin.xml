@@ -5,14 +5,20 @@
     android:layout_height="match_parent"
     android:background="@color/background">
 
-    <View
-        android:id="@+id/header_background"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/top_section_height"
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/primary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:fitsSystemWindows="true"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/header_signin"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/primary" />
+    </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="0dp"
@@ -21,7 +27,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/header_background">
+        app:layout_constraintTop_toBottomOf="@id/appbar_signin">
 
         <LinearLayout
             android:layout_width="match_parent"
