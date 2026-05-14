@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/add_new_task"
-        android:textColor="#1F2937"
+        android:textColor="@color/grey_800"
         android:textSize="22sp"
         android:textStyle="bold" />
 
@@ -32,8 +32,8 @@
         android:inputType="textCapSentences"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:textColor="#1F2937"
-        android:textColorHint="#9CA3AF"
+        android:textColor="@color/grey_800"
+        android:textColorHint="@color/grey_400"
         android:textSize="15sp" />
 
     <!-- Date and Time Row -->
@@ -53,14 +53,14 @@
             android:insetBottom="0dp"
             android:text="@string/due_date"
             android:textAllCaps="false"
-            android:textColor="#6B7280"
+            android:textColor="@color/grey_500"
             android:textSize="14sp"
             app:cornerRadius="12dp"
             app:icon="@drawable/ic_calendar"
             app:iconGravity="textStart"
             app:iconPadding="10dp"
             app:iconSize="20dp"
-            app:iconTint="#6B7280"
+            app:iconTint="@color/grey_500"
             app:strokeColor="@color/primary"
             app:strokeWidth="1dp" />
 
@@ -78,14 +78,14 @@
             android:insetBottom="0dp"
             android:text="@string/due_time"
             android:textAllCaps="false"
-            android:textColor="#6B7280"
+            android:textColor="@color/grey_500"
             android:textSize="14sp"
             app:cornerRadius="12dp"
             app:icon="@drawable/ic_clock"
             app:iconGravity="textStart"
             app:iconPadding="10dp"
             app:iconSize="20dp"
-            app:iconTint="#6B7280"
+            app:iconTint="@color/grey_500"
             app:strokeColor="@color/primary"
             app:strokeWidth="1dp" />
     </LinearLayout>
@@ -112,7 +112,7 @@
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:text="@string/priority_medium"
-            android:textColor="#1F2937"
+            android:textColor="@color/grey_800"
             android:textSize="15sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -134,10 +134,10 @@
             android:paddingEnd="24dp"
             android:text="@string/cancel"
             android:textAllCaps="false"
-            android:textColor="#4B5563"
+            android:textColor="@color/grey_600"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:backgroundTint="#F3F4F6"
+            app:backgroundTint="@color/grey_100"
             app:cornerRadius="12dp"
             app:elevation="0dp" />
 
