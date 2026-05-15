@@ -19,4 +19,11 @@ It helps users manage daily tasks easily and stay productive.
 
 - Android Studio  
 - Java  
-- XML (UI Design)
+
+## 🧠 Architecture
+
+This project is built using **MVC (Model - View - Controller)** pattern:
+
+- **Model** → SQLite database, Task data classes  
+- **View** → XML layouts (UI screens)  
+- **Controller** → Activities handling logic and user actions 
